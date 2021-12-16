@@ -14,8 +14,10 @@ function writePassword(){
     alert("!!!MUST BE BETWEEN 8 AND 128!!!")
 
     // console.log(pw_Length)
+
+    return
   };
-  
+   
   var password = generatePassword();
 
   function generatePassword(){
@@ -35,13 +37,15 @@ function writePassword(){
 
     for (var i = 0; i < pw_Length; i++) {
       
-      pw_char = pw_char.concat(charList[Math.floor(Math.random() * pw_Length)]);
-       
+      pw_char = pw_char.concat(charList[Math.floor(Math.random() * charList.length)]);
+      
+      
     };
 
     console.log(pw_char)
-    
-    return password
+    finalPW = pw_char.join("")
+
+    return finalPW
     
   };
   
