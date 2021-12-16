@@ -2,7 +2,7 @@
 var generateBtn = document.querySelector("#generate");
 var lowerCase = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 var upperCase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
-var spclChar = [" ","'","!",'"',"#","$","%","&","(",")","*","+",",","-",".","/",":",";","<","=",">","?","@","]","^","_","`","{","|","}","~"]
+var spclChar = [" ","'","!",'"',"#","$","%","&","(",")","*","+",",","-",".","/",":",";","<","=",">","?","@","]","[","^","_","`","{","|","}","~"]
 
 // Write password to the #password input
 function writePassword(){
@@ -12,9 +12,6 @@ function writePassword(){
 
   if (pw_Length <8 || pw_Length>128){
     alert("!!!MUST BE BETWEEN 8 AND 128!!!")
-
-    // console.log(pw_Length)
-
     return
   };
    
@@ -38,8 +35,7 @@ function writePassword(){
     for (var i = 0; i < pw_Length; i++) {
       
       pw_char = pw_char.concat(charList[Math.floor(Math.random() * charList.length)]);
-      
-      
+          
     };
 
     console.log(pw_char)
