@@ -8,7 +8,7 @@ var spclChar = [" ","'","!",'"',"#","$","%","&","(",")","*","+",",","-",".","/",
 function writePassword(){
   
   var pw_Length = prompt("How many long do you want your password?")
-  console.log(pw_Length)
+  // console.log(pw_Length)
 
   if (pw_Length <8 || pw_Length>128){
     alert("!!!MUST BE BETWEEN 8 AND 128!!!")
@@ -29,7 +29,7 @@ function writePassword(){
       charList = charList.concat(spclChar)
     };
     
-    console.log(charList)
+    // console.log(charList)
     var pw_char = []
 
     for (var i = 0; i < pw_Length; i++) {
@@ -38,7 +38,7 @@ function writePassword(){
           
     };
 
-    console.log(pw_char)
+    // console.log(pw_char)
     finalPW = pw_char.join("")
 
     return finalPW
