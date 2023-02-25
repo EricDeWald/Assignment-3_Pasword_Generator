@@ -1,4 +1,4 @@
-# Assignment-3_Pasword_Generator
+#Pasword_Generator
 JS pasward generator
 ===
 
